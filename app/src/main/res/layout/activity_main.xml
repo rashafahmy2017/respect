@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:weightSum="100"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/firstFragment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:text="First"
+            android:layout_weight="20"
+            android:textColor="@android:color/secondary_text_dark" />
+
+        <Button
+            android:id="@+id/secondFragment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:text="Second"
+            android:layout_weight="20"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/firstFragment"
+            android:textColor="@android:color/secondary_text_dark"/>
+        <Button
+            android:id="@+id/thirdFragment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:background="@android:color/white"
+            android:text="third"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/secondFragment"
+            android:textColor="@android:color/secondary_text_dark"/>
+
+        <Button
+            android:id="@+id/fourthFragment"
+            android:layout_width="0dp"
+            android:layout_weight="20"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:text="fourth"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/thirdFragment"
+            android:textColor="@android:color/secondary_text_dark" />
+        <Button
+            android:id="@+id/fifthFragment"
+            android:layout_width="0dp"
+            android:layout_weight="20"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:text="fifth"
+            android:layout_alignParentBottom="true"
+            android:textColor="@android:color/secondary_text_dark"
+            android:layout_toRightOf="@id/fourthFragment"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

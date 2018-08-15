@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TryMyself</string>
+    <string name="online"> ONLINE</string>
+    <string name="offline"> OFFLINE</string>
+</resources>
